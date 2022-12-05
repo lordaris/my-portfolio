@@ -1,0 +1,54 @@
+---
+title: How I made this website / blog
+date: '2022-12-05'
+tags: ['Nextjs','React','Markdown']
+draft: false
+summary: In this post I tell you how I made this blog using Nextjs and Tailwind
+images: []
+layout: PostLayout
+canonicalUrl: howimademyblog
+---
+
+This blog was made using the "Tailwind CSS Blog" template from Vercel.
+
+I was trying to make a blog and add it to an already made website, but I don't like the workflow
+needed to make them work, so after a lot of struggles I decided to start all over and make a new website
+with the blog included. I also tried some templates with a CMS included, like Sanity, Contentful and Prismic, but
+I struggled to change the theming, the main page or the links in the navigation bar.
+
+At the end I found the template that I already mentioned, and even though it doesn't include a CMS, I liked it
+because it is way easier to modify, which is what I did.
+
+It has a lot of features, which you can read [here](https://vercel.com/templates/next.js/tailwind-css-starter-blog),
+being the most important for me: the use of Tailwind, the use of MDX for the blog posts, math display with "KaTeX" and
+the structure, which is easy to use.
+
+I installed it using the next code:
+```bash
+npx degit https://github.com/timlrx/tailwind-nextjs-starter-blog.git
+```
+The instructions in the template site are very clear, so I won't talk about them but I'll mention some things that I
+have to remember for my own use, like the `npm run dev` command to run the development server, `node ./scripts/compose.js`
+to bootstrap a new post (you have to fill some data and it'll create a new file within the 'data' folder).
+
+I replaced the favicons with a simple one made with [favicon.io](https://favicon.io/) (it's text based).
+I made the main page using a hero from DaisiUI, and the typing animation comes
+from [React-type-animation](https://github.com/maxeth/react-type-animation). The template includes a section to show
+the last posts in the main page, but I disabled it because I don't liked to have posts in the main page.
+
+
+The icons from the main page come from [react-icons](https://react-icons.github.io/react-icons/)
+
+I had some issues when building the site, so I followed the instructions from the terminal and fixed them before deployment.
+
+I uploaded the project to github, and also it is important to remember that in order to add a new post or modify my site
+I have to push the new content into the repository, which I can do with the next sequence of bash commands:
+```bash
+git add .
+git commit -m "commit"
+git push -u origin main
+```
+
+I know it's nothing very fancy, but I'm not so used to github.
+
+I still want to change some stuff like the theme, pick a better image at the main page and keep making posts for my blog.
