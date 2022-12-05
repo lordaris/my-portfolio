@@ -9,7 +9,16 @@ import TypingAnimation from '../components/TypingAnimation'
 import NewsletterForm from '@/components/NewsletterForm'
 import Image from 'next/image'
 const MAX_DISPLAY = 5
-
+import { FaReact, FaPython } from 'react-icons/fa'
+import { DiDjango } from 'react-icons/di'
+import {
+  SiPandas,
+  SiPostgresql,
+  SiTailwindcss,
+  SiBootstrap,
+  SiSpacemacs,
+  SiNeovim,
+} from 'react-icons/si'
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
@@ -20,10 +29,7 @@ export default function Home({ posts }) {
   return (
     <>
       <div className="hero min-h-screen ">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className={'basis-1/3'}>
-            <Image src={computer} alt={'computer'} />
-          </div>
+        <div className="hero-content flex-col lg:flex-row">
           <div className={'basis-2/3'}>
             <h1 className="text-5xl font-bold">Armando Peña</h1>
             <TypingAnimation />
@@ -36,6 +42,42 @@ export default function Home({ posts }) {
             <button className="btn-primary btn">
               <Link href="/about">About Me</Link>
             </button>
+          </div>
+          <div className={'basis-1/3'}>
+            <div className="card w-96 bg-base-100 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title text-center">Some tools I use</h2>
+                <div className={'grid grid-cols-3 gap-4 text-6xl'}>
+                  <div>
+                    <FaPython />
+                  </div>
+                  <div>
+                    <DiDjango />
+                  </div>
+                  <div>
+                    <SiPandas />
+                  </div>
+                  <div>
+                    <SiPostgresql />
+                  </div>
+                  <div>
+                    <FaReact />
+                  </div>
+                  <div>
+                    <SiTailwindcss />
+                  </div>
+                  <div>
+                    <SiBootstrap />
+                  </div>
+                  <div>
+                    <SiSpacemacs />
+                  </div>
+                  <div>
+                    <SiNeovim />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
