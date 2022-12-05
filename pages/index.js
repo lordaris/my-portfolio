@@ -7,7 +7,7 @@ import formatDate from '@/lib/utils/formatDate'
 import computer from '/public/static/images/computer.png'
 import TypingAnimation from '../components/TypingAnimation'
 import NewsletterForm from '@/components/NewsletterForm'
-import Image from "next/image"
+import Image from 'next/image'
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
@@ -22,7 +22,7 @@ export default function Home({ posts }) {
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className={'basis-1/3'}>
-            <Image src={computer} />
+            <Image src={computer} alt={'computer'} />
           </div>
           <div className={'basis-2/3'}>
             <h1 className="text-5xl font-bold">Armando Peña</h1>
@@ -34,12 +34,11 @@ export default function Home({ posts }) {
               resume, read my blog or clic the next button:
             </p>
             <button className="btn-primary btn">
-              <a href="/about">About Me</a>
+              <Link href="/about">About Me</Link>
             </button>
           </div>
         </div>
       </div>
-
 
       {/*This is a very cool feature to show the last posts. It's disabled because I don't need it*/}
       {/*

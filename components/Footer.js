@@ -19,7 +19,6 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
         </div>
-
       </div>
     </footer>
   )

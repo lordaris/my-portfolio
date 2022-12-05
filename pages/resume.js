@@ -1,7 +1,7 @@
 import React from 'react'
 import data from '../public/static/assets/resume.json'
 import profile from '../public/static/images/profile.jpeg'
-import Image from "next/image"
+import Image from 'next/image'
 const resumeName = data.userFirstName + ' ' + data.userLastName
 
 class Resume extends React.Component {
@@ -25,7 +25,7 @@ class Resume extends React.Component {
 
               {data.education.map((x) => {
                 return (
-                  <a className={'grid grid-cols-2 gap-10'}>
+                  <a className={'grid grid-cols-2 gap-10'} key={x.id}>
                     <a>
                       <p className={'text-right font-bold'}>{x.institution}</p>
                       <p className={'text-right font-light'}>{x.degree}</p>
@@ -39,7 +39,7 @@ class Resume extends React.Component {
               <p className={'py-5 text-center text-xl'}>Skills</p>
               {data.skills.map((s) => {
                 return (
-                  <div>
+                  <div key={s.id}>
                     <a className={'grid grid-cols-2 gap-10 py-1'}>
                       <p className={'text-right font-bold '}>{s.skillType}</p>
                       <p className={'text-left'}>{s.skillValues}</p>
@@ -52,7 +52,7 @@ class Resume extends React.Component {
               <p className={'py-5 text-center text-xl'}>Projects / Open-Source</p>
               {data.projects.map((projects) => {
                 return (
-                  <div>
+                  <div key={projects.id}>
                     <a href={projects.url} className={'grid grid-cols-2 gap-10 py-1'}>
                       <p className={'text-right font-bold '}>{projects.name}</p>
                       <p className={'text-justify font-light'}>{projects.description}</p>
@@ -64,7 +64,7 @@ class Resume extends React.Component {
               <p className={'py-5 text-center text-xl'}>Certifications</p>
               {data.certifications.map((certifications) => {
                 return (
-                  <div>
+                  <div key={certifications.id}>
                     <a className={'grid grid-cols-2 gap-10 py-1'}>
                       <p className={'text-right font-semibold '}>{certifications.description}</p>
 
