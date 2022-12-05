@@ -1,0 +1,253 @@
+{
+  "id": 57272,
+  "uuid": "a592f829-6480-48c6-b838-87250e331797",
+  "cvName": "Jesús's Resume",
+  "createdAt": "2022-11-25T16:15:46.702Z",
+  "updatedAt": "2022-11-26T14:57:18.678Z",
+  "isShared": true,
+  "templateId": 4,
+  "userFirstName": "Jesús Armando",
+  "userLastName": "Peña Lucero",
+  "userHeading": "Python Backend Developer",
+  "userEmail": "audio.aris@gmail.com",
+  "userAddress": "Privada de Encino 3579, Abraham Gonzalez",
+  "userPhoneNumber": "6144055836",
+  "templateUrl": "https://hackerresume-prod.s3.us-east-1.amazonaws.com/thumbnails/18661436/a592f829-6480-48c6-b838-87250e331797.png",
+  "userId": 48326,
+  "user": {
+    "id": 48326,
+    "uid": "18661436",
+    "lastActiveToken": "",
+    "createdAt": "2022-10-21T19:37:39.447Z",
+    "updatedAt": "2022-10-21T19:37:39.447Z"
+  },
+  "awards": [],
+  "skills": [
+    {
+      "id": 229077,
+      "skillType": "programming",
+      "skillValues": ["Python"],
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 229079,
+      "skillType": "frameworks",
+      "skillValues": [" Django, ", " React, ", " Pandas, ", " Seaborn, ", "  numpy,", " TailwindCSS, ", " Bootstrap"],
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 229080,
+      "skillType": "database",
+      "skillValues": ["MySQL,", " Postgresql"],
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 229078,
+      "skillType": "tools",
+      "skillValues": [
+        "Excel,",
+        " GitHub,",
+        " Pycharm,",
+        " Visual Studio Code,",
+        " emacs,",
+        " vim,",
+        " Microsoft Power BI,",
+        " Odoo"
+      ],
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    }
+  ],
+  "work": [],
+  "education": [
+    {
+      "id": 77935,
+      "degree": "Environmental Technology Engineering",
+      "startDate": "Jun 2020",
+      "completionDate": "Jun 2024",
+      "institution": "Universidad Abierta y a Distancia de México",
+      "location": "México",
+      "score": "",
+      "scoreType": "CGPA",
+      "studyType": "Bachelor",
+      "sortOrderId": 0,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.704Z"
+    },
+    {
+      "id": 77936,
+      "degree": "International Economics",
+      "startDate": "Jun 2016",
+      "completionDate": "Unfinished",
+      "institution": "Universidad Autónoma de Chihuahua",
+      "location": "Chihuahua, México",
+      "score": "",
+      "scoreType": "CGPA",
+      "studyType": "Bachelor",
+      "sortOrderId": 1,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.704Z"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 26466,
+      "description": "Python Core",
+      "issuedBy": "Hyperskill",
+      "url": "https://hyperskill.org/",
+      "sortOrderId": 0,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 26467,
+      "description": "Big Data Technician",
+      "issuedBy": "INTTELMEX",
+      "url": "https://capacitateparaelempleo.org/verifica_diplomado/R9TLUU3CQ/",
+      "sortOrderId": 1,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 26468,
+      "description": "EF SET English Certificate 73/100 (C2 Proficient)",
+      "issuedBy": "EF SET",
+      "url": "https://www.efset.org/cert/wJNeTF",
+      "sortOrderId": 2,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 26469,
+      "description": "IBM Customer Engagement Specialist Professional Certificate",
+      "issuedBy": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/verify/Z68GVANZDYCL",
+      "sortOrderId": 3,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 26470,
+      "description": "Educational needs analyst",
+      "issuedBy": "INTTELMEX",
+      "url": "https://capacitateparaelempleo.org/verifica/hgqeg3e8z/",
+      "sortOrderId": 4,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 26471,
+      "description": "Digital Marketing",
+      "issuedBy": "INTTELMEX",
+      "url": "https://capacitateparaelempleo.org/verifica/b143k29rx",
+      "sortOrderId": 5,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 26472,
+      "description": "Online courses development",
+      "issuedBy": "Secretaría de Trabajo y Prevision Social ",
+      "url": "",
+      "sortOrderId": 6,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": 96981,
+      "name": "PDF TO BIONIC READING",
+      "description": "This script can convert a PDF file into Bionic Reading format to improve reading speed. It transforms the PDF into images, which by OCR are converted into plain text, which can be then transformed to Bionic Reading with the API",
+      "keywords": [
+        "Python",
+        " pyTesseract",
+        " Bionic Reading API",
+        " PDFtoImage"
+      ],
+      "url": "https://github.com/lordaris/Python/tree/main/My_own_projects/PDF_to_bionic_reading",
+      "sortOrderId": 0,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.704Z"
+    },
+    {
+      "id": 96980,
+      "name": "HYPERSKILL COURSE PROJECTS",
+      "description": "A set of projects from a Python course from Hyperskill \"Jet brains academy\". \n- They include using functions, conditions, loops, file handling, algorithms and operations with collections, random generation, JSON files, OOP, exception handling, system-specific parameters, and so on. ",
+      "keywords": ["Python"],
+      "url": "https://github.com/lordaris/Python/tree/main/Python_Learning/Hyperskill",
+      "sortOrderId": 1,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 96976,
+      "name": "HITCHHIKER'S GUIDE TO PYTHON",
+      "description": "I'm translating some chapters of the Hitchhiker's Guide to Python ",
+      "keywords": ["GitHub", " Sphinx"],
+      "url": "https://github.com/lordaris/python-guide",
+      "sortOrderId": 2,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 96979,
+      "name": "FREECODECAMP TRANSLATION",
+      "description": "I'm part of the translation team of \"FreeCodeCamp\". ",
+      "keywords": ["Python", " Trello"],
+      "url": "https://www.freecodecamp.org/espanol/news/author/lordaris/",
+      "sortOrderId": 3,
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    }
+  ],
+  "links": [
+    {
+      "id": 110916,
+      "network": "HackerRank",
+      "username": "",
+      "url": "https://www.hackerrank.com/audio_aris",
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 110917,
+      "network": "GitHub",
+      "username": "",
+      "url": "https://lordaris.github.io/data-science-for-business/intro.html",
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    },
+    {
+      "id": 110918,
+      "network": "Linkedin",
+      "username": "",
+      "url": "https://www.linkedin.com/in/jarmandopl/",
+      "resumeId": 57272,
+      "createdAt": "2022-11-25T16:15:46.702Z",
+      "updatedAt": "2022-11-25T16:15:46.703Z"
+    }
+  ]
+}
