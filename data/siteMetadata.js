@@ -5,8 +5,8 @@ const siteMetadata = {
   description: '',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://arisdev.vercel.app',
+  siteRepo: 'https://github.com/lordaris/my-portfolio',
   siteLogo: '/static/images/logo.svg',
   image: '/static/images/avatar.svg',
   socialBanner: '/static/images/twitter-card.png',
