@@ -1,24 +1,19 @@
 import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
-import formatDate from '@/lib/utils/formatDate'
-import computer from '/public/static/images/computer.png'
 import TypingAnimation from '../components/TypingAnimation'
-import NewsletterForm from '@/components/NewsletterForm'
-import Image from 'next/image'
-const MAX_DISPLAY = 5
-import { FaReact, FaPython } from 'react-icons/fa'
+import { FaPython, FaReact } from 'react-icons/fa'
 import { DiDjango } from 'react-icons/di'
 import {
+  SiBootstrap,
+  SiNeovim,
   SiPandas,
   SiPostgresql,
-  SiTailwindcss,
-  SiBootstrap,
   SiSpacemacs,
-  SiNeovim,
+  SiTailwindcss,
 } from 'react-icons/si'
+
+const MAX_DISPLAY = 5
+
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
@@ -28,7 +23,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen bg-base-100">
         <div className="hero-content flex-col lg:flex-row">
           <div className={'basis-2/3'}>
             <h1 className="text-5xl font-bold">Armando Peña</h1>
@@ -47,34 +42,34 @@ export default function Home({ posts }) {
             <div className="card w-96 bg-base-100 drop-shadow-2xl">
               <div className="card-body">
                 <h2 className="card-title text-center">Some tools I use</h2>
-                <div className={'grid grid-cols-3 gap-4 text-6xl'}>
-                  <div className={'hover:text-sky-700'}>
+                <div className={'text-primary grid grid-cols-3 gap-4 text-6xl '}>
+                  <div className={'hover:text-primary-focus'}>
                     <FaPython />
                   </div>
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <DiDjango />
                   </div>
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <SiPandas />
                   </div>
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <SiPostgresql />
                   </div>
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <FaReact />
                   </div>
 
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <SiTailwindcss />
                   </div>
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <SiBootstrap />
                   </div>
 
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <SiSpacemacs />
                   </div>
-                  <div className={'hover:text-sky-700'}>
+                  <div className={'hover:text-primary-focus'}>
                     <SiNeovim />
                   </div>
                 </div>

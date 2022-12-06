@@ -27,29 +27,29 @@ module.exports = {
             a: {
               color: theme('colors.primary.500'),
               '&:hover': {
-                color: `${theme('colors.primary.600')} !important`,
+                // color: `${theme('colors.primary.600')} !important`,
               },
               code: { color: theme('colors.primary.400') },
             },
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              // color: theme('colors.gray.900'),
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              // color: theme('colors.gray.900'),
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.900'),
+              // color: theme('colors.gray.900'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.900'),
+              // color: theme('colors.gray.900'),
             },
             pre: {
-              backgroundColor: theme('colors.gray.800'),
+              // backgroundColor: theme('colors.gray.800'),
             },
             code: {
               color: theme('colors.pink.500'),
