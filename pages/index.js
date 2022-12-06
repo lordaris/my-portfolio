@@ -44,35 +44,37 @@ export default function Home({ posts }) {
             </button>
           </div>
           <div className={'basis-1/3'}>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 drop-shadow-2xl">
               <div className="card-body">
                 <h2 className="card-title text-center">Some tools I use</h2>
                 <div className={'grid grid-cols-3 gap-4 text-6xl'}>
-                  <div>
+                  <div className={'hover:text-sky-700'}>
                     <FaPython />
                   </div>
-                  <div>
+                  <div className={'hover:text-sky-700'}>
                     <DiDjango />
                   </div>
-                  <div>
+                  <div className={'hover:text-sky-700'}>
                     <SiPandas />
                   </div>
-                  <div>
+                  <div className={'hover:text-sky-700'}>
                     <SiPostgresql />
                   </div>
-                  <div>
+                  <div className={'hover:text-sky-700'}>
                     <FaReact />
                   </div>
-                  <div>
+
+                  <div className={'hover:text-sky-700'}>
                     <SiTailwindcss />
                   </div>
-                  <div>
+                  <div className={'hover:text-sky-700'}>
                     <SiBootstrap />
                   </div>
-                  <div>
+
+                  <div className={'hover:text-sky-700'}>
                     <SiSpacemacs />
                   </div>
-                  <div>
+                  <div className={'hover:text-sky-700'}>
                     <SiNeovim />
                   </div>
                 </div>
