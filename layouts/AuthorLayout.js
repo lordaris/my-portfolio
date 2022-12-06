@@ -34,7 +34,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               <SocialIcon kind="twitter" href={twitter} />
             </div>
           </div>
-          <div className="max-w-none pt-8 pb-8 text-base dark:prose-dark xl:col-span-2">
+          <div className="prose max-w-none pt-8 pb-8 text-slate-50 dark:prose-dark xl:col-span-2">
             {children}
           </div>
         </div>

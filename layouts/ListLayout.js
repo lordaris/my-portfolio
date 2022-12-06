@@ -66,13 +66,15 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                           {title}
                         </Link>
                       </h3>
-                      <div className="flex flex-wrap text-accent hover:text-accent-focus">
+                      <div className="text-primary flex flex-wrap hover:text-primary-focus">
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}
                       </div>
                     </div>
-                    <div className="prose max-w-none  dark:text-gray-400">{summary}</div>
+                    <div className=" prose max-w-none text-slate-50  dark:text-gray-400">
+                      {summary}
+                    </div>
                   </div>
                 </article>
               </li>
