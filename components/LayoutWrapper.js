@@ -15,7 +15,7 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="mr-3 "></div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
+                  <div className="text-primary hidden h-6 text-2xl font-bold hover:text-primary-focus sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
@@ -30,7 +30,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="text-primary p-1 font-medium hover:text-primary-focus  dark:text-gray-100 sm:p-4"
+                  className="text-primary p-1 font-medium  hover:text-primary-focus  dark:text-gray-100 sm:p-4"
                 >
                   <>{link.title}</>
                 </Link>

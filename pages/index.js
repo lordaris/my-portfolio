@@ -23,7 +23,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
-      <div className="hero min-h-screen bg-base-100">
+      <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
           <div className={'basis-2/3'}>
             <h1 className="text-5xl font-bold">Armando Peña</h1>
@@ -39,7 +39,7 @@ export default function Home({ posts }) {
             </button>
           </div>
           <div className={'basis-1/3'}>
-            <div className="card w-96 bg-base-100 drop-shadow-2xl">
+            <div className="card w-96  drop-shadow-2xl">
               <div className="card-body">
                 <h2 className="card-title text-center">Some tools I use</h2>
                 <div className={'text-primary grid grid-cols-3 gap-4 text-6xl '}>
