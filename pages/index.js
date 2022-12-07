@@ -1,18 +1,9 @@
 import Link from '@/components/Link'
+import languageIcons from '@/data/languageIcons'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import TypingAnimation from '../components/TypingAnimation'
-import { FaPython, FaReact } from 'react-icons/fa'
-import { DiDjango } from 'react-icons/di'
-import {
-  SiBootstrap,
-  SiNeovim,
-  SiPandas,
-  SiPostgresql,
-  SiSpacemacs,
-  SiTailwindcss,
-} from 'react-icons/si'
 
-const MAX_DISPLAY = 5
+// const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -25,7 +16,7 @@ export default function Home({ posts }) {
     <>
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
-          <div className={'basis-2/3'}>
+          <div className={'lg:basis-3/3 sm:basis-2/3'}>
             <h1 className="text-5xl font-bold">Armando Peña</h1>
             <TypingAnimation />
             <p className="py-6">
@@ -38,45 +29,21 @@ export default function Home({ posts }) {
               <Link href="/about">About Me</Link>
             </button>
           </div>
-          <div className={'basis-1/3'}>
-            <div className="card w-96  drop-shadow-2xl">
-              <div className="card-body">
-                <h2 className="card-title text-center">Some tools I use</h2>
-                <div className={'text-primary grid grid-cols-3 gap-4 text-6xl '}>
-                  <div className={'hover:text-primary-focus'}>
-                    <FaPython />
-                  </div>
-                  <div className={'hover:text-primary-focus'}>
-                    <DiDjango />
-                  </div>
-                  <div className={'hover:text-primary-focus'}>
-                    <SiPandas />
-                  </div>
-                  <div className={'hover:text-primary-focus'}>
-                    <SiPostgresql />
-                  </div>
-                  <div className={'hover:text-primary-focus'}>
-                    <FaReact />
-                  </div>
-
-                  <div className={'hover:text-primary-focus'}>
-                    <SiTailwindcss />
-                  </div>
-                  <div className={'hover:text-primary-focus'}>
-                    <SiBootstrap />
-                  </div>
-
-                  <div className={'hover:text-primary-focus'}>
-                    <SiSpacemacs />
-                  </div>
-                  <div className={'hover:text-primary-focus'}>
-                    <SiNeovim />
-                  </div>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div className={'py-5 text-center text-5xl'}>Some skills</div>
+      <div className={'grid grid-cols-4 gap-4'}>
+        {languageIcons.map((icon) => (
+          <div
+            key={icon.name}
+            className="shadow-primary shadow-5xl card bg-neutral hover:shadow-md hover:shadow-primary-focus"
+          >
+            <div className="text-primary card-body hover:text-primary-focus">
+              <div className={' card-actions justify-center text-6xl'}>{icon.image}</div>
+              <div className={'card-actions justify-center '}>{icon.name}</div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
 
       {/*This is a very cool feature to show the last posts. It's disabled because I don't need it*/}
