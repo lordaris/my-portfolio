@@ -15,11 +15,13 @@ export default function Home({ posts }) {
   return (
     <>
       <div className="hero min-h-screen ">
-        <div className="hero-content flex-col lg:flex-row">
-          <div className={'lg:basis-3/3 sm:basis-2/3'}>
-            <h1 className="text-5xl font-bold">Armando Peña</h1>
-            <TypingAnimation />
-            <p className="py-6">
+        <div className="hero-content flex flex-col lg:flex-row ">
+          <div className={'basis-3/3 '}>
+            <h1 className="text-4xl font-bold sm:text-5xl ">Armando Peña</h1>
+            <p className={'py-5 text-xs leading-9 sm:text-base'}>
+              <TypingAnimation />
+            </p>
+            <p className="my-1 py-2">
               I'm a very passionate programmer who loves to learn new skills all the time. Right now
               I'm very into web applications development and web development, but I also like
               scripting and data analysis. If you want to know more about me, you can check my
@@ -31,19 +33,21 @@ export default function Home({ posts }) {
           </div>
         </div>
       </div>
-      <div className={'py-5 text-center text-5xl'}>Some skills</div>
-      <div className={'grid grid-cols-4 gap-4'}>
-        {languageIcons.map((icon) => (
-          <div
-            key={icon.name}
-            className="shadow-primary shadow-5xl card bg-neutral hover:shadow-md hover:shadow-primary-focus"
-          >
-            <div className="text-primary card-body hover:text-primary-focus">
-              <div className={' card-actions justify-center text-6xl'}>{icon.image}</div>
-              <div className={'card-actions justify-center '}>{icon.name}</div>
+      <div className={'snap-start'}>
+        <div className={'py-5 text-center text-5xl'}>Some skills</div>
+        <div className={'grid grid-cols-2 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'}>
+          {languageIcons.map((icon) => (
+            <div
+              key={icon.name}
+              className="shadow-primary shadow-5xl card bg-neutral hover:shadow-md hover:shadow-primary-focus"
+            >
+              <div className="text-primary card-body hover:text-primary-focus">
+                <div className={' card-actions justify-center text-6xl'}>{icon.image}</div>
+                <div className={' card-actions justify-center'}>{icon.name}</div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/*This is a very cool feature to show the last posts. It's disabled because I don't need it*/}

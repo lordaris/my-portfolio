@@ -30,7 +30,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="text-primary p-1 font-medium  hover:text-primary-focus  dark:text-gray-100 sm:p-4"
+                  className="text-primary p-1 font-medium hover:text-primary-focus  active:font-light sm:p-4"
                 >
                   <>{link.title}</>
                 </Link>
