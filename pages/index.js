@@ -35,11 +35,11 @@ export default function Home({ posts }) {
       </div>
       <div className={'snap-start'}>
         <div className={'py-5 text-center text-5xl'}>Some skills</div>
-        <div className={'grid grid-cols-2 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'}>
+        <div className={'grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'}>
           {languageIcons.map((icon) => (
             <div
               key={icon.name}
-              className="shadow-primary shadow-5xl card bg-neutral hover:shadow-md hover:shadow-primary-focus"
+              className="shadow-primary shadow-5xl card bg-neutral hover:shadow-md hover:shadow-primary-focus active:scale-105"
             >
               <div className="text-primary card-body hover:text-primary-focus">
                 <div className={' card-actions justify-center text-6xl'}>{icon.image}</div>
